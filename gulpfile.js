@@ -9,7 +9,7 @@ var minifyjs = require('gulp-js-minify');
 var mergeStream = require('merge-stream');
 var del = require('del');
 var fs = require('fs');
-var plugins = require('gulp-load-plugins')({ lazy: false });
+var plugins = require('gulp-load-plugins')();
 var _ = require('lodash');
 
 var args = process.argv.slice(3);
@@ -72,12 +72,7 @@ function bundle(b, outputPath) {
     .pipe(gulp.dest(outputDir));
 }
 
-var jsBundles = {
-  'build/public/js/main.js': createBundle('./public/js/main.js'),
-  'build/public/js/vendor.js': createBundle('./public/js/vendor.js'),
-  'build/public/js/store.js': createBundle('./public/js/store.js'),
-  'build/public/js/plot.js': createBundle('./public/js/plot.js')
-}
+var jsBundles = {}
 
 
 gulp.task('js:browser', function() {
@@ -102,5 +97,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('build', function(callback) {
-  runSequence(['css', 'js:browser', 'copy'], 'watch', callback);
+  runSequence(['css', 'js:browser', 'copy'], callback);
 });
