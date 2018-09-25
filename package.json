@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/hephzaron/waw-frontend/issues"
   },
-  "homepage": "https://github.com/hephzaron/waw-frontend#readme"
+  "homepage": "https://github.com/hephzaron/waw-frontend#readme",
+  "devDependencies": {
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.2",
+    "del": "^3.0.0",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-js-minify": "0.0.3",
+    "gulp-load-plugins": "^1.5.0",
+    "lodash": "^4.17.11",
+    "merge-stream": "^1.0.1",
+    "run-sequence": "^2.2.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.0"
+  }
 }
