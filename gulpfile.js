@@ -21,6 +21,7 @@ gulp.task('clean', function() {
 gulp.task('copy', function() {
   return mergeStream(
     gulp.src('public/css/**/*').pipe(gulp.dest('build/public/css/')),
+    gulp.src('public/fonts/*').pipe(gulp.dest('build/public/fonts/')),
     gulp.src('public/imgs/**/*').pipe(gulp.dest('build/public/imgs/')),
     gulp.src('public/js/utils/*').pipe(gulp.dest('build/public/js/utils/')),
     gulp.src('public/*.json').pipe(gulp.dest('build/public/'))
