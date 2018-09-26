@@ -2,6 +2,22 @@
   @include display-flex;
   @include flex-flow(column);
   height: 100%;
+  background-image: url("../imgs/bg-well.jpg");
+  h3,
+  p {
+    color: $primary-color-text;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+}
+
+.bg-layout {
+  background-color: rgba(14, 14, 14, 0.5);
+  padding: 40px 20px;
+}
+
+.bg-latest {
+  float: right;
 }
 
 .main {
