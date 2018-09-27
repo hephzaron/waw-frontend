@@ -6,3 +6,21 @@ a:hover {
   cursor: pointer;
   font-weight: bold;
 }
+
+.form-control-feedback.fa {
+  font-size: 20px;
+  margin-top: 5px;
+  color: rgb(6, 62, 83)
+}
+
+.no-border {
+  border: 0 !important;
+  border-radius: 0px !important;
+  border-bottom: 2px solid rgb(6, 84, 90) !important;
+  box-shadow: none !important
+}
+
+.form-horizontal {
+  background-color: rgba(29, 95, 218, 0.2);
+  padding: 10px;
+}
