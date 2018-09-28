@@ -21,7 +21,8 @@
     &>a:hover {
       background-color: inherit;
       border-radius: 0px;
-      border-bottom: 4px solid white
+      height: 60px;
+      border-bottom: 7px solid white
     }
   }
   span.fa,
@@ -33,4 +34,24 @@
       font-weight: bolder
     }
   }
+  i.fa-plus-circle {
+    float: right;
+    background-color: white;
+    border-radius: 50%
+  }
+}
+
+@media (min-width:992px) {
+  #dashboard .nav-tabs {
+    li {
+      margin-left: 3em;
+      margin-right: 1.5em;
+    }
+  }
+}
+
+span>.badge {
+  margin-bottom: 20px;
+  margin-left: -12px;
+  background-color: rgb(161, 31, 31)
 }
