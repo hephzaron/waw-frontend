@@ -1,0 +1,36 @@
+.nav {
+  background-color: rgba(11, 13, 17, 0.479);
+  & .navbar-form {
+    margin-right: 0px
+  }
+}
+
+.navbar-overlay {
+  background-image: url('../imgs/bg-well.jpg');
+}
+
+#dashboard {
+  & input.search {
+    border: 0 !important;
+    border-bottom: 3px solid rgb(41, 67, 153) !important;
+    border-radius: 0px !important;
+    box-shadow: 0px !important;
+  }
+  ul>li {
+    margin-top: 3px;
+    &>a:hover {
+      background-color: inherit;
+      border-radius: 0px;
+      border-bottom: 4px solid white
+    }
+  }
+  span.fa,
+  strong {
+    color: white;
+  }
+  .fa-search {
+    &:hover {
+      font-weight: bolder
+    }
+  }
+}

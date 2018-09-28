@@ -18,7 +18,28 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid" id="dashboard">
+  <div class="navbar-overlay">
+    <ul class="nav nav-tabs">
+    <form role="search" class="navbar-form navbar-left">
+      <div class="input-group">
+        <input type="text" placeholder ="Search" class="form-control search">
+          <div class="input-group-addon btn-primary">
+            <i class="fa fa-search fa-lg fa-inverse"></i>
+          </div>
+      </div>
+    </form>
+    <li>
+      <a href="#"><span class="fa fa-user fa-lg"></span><strong>Username</strong></a>
+    </li>
+    <li>
+      <a href="#"><span class="fa fa-bell-o fa-lg"></span><strong>Notifications</strong></a>
+    </li>
+    <li>
+      <a href="#"><span class="fa fa-desktop fa-lg"></span><strong>My views</strong></a>
+    </li>
+  </ul>
+  </div>
   </div>
   <script src="build/public/js/utils/jquery-3.2.1.min.js" type="text/javascript"></script>
   <script src="build/public/js/utils/bootstrap.min.js" type="text/javascript"></script>
