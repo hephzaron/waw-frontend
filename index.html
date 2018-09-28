@@ -29,8 +29,13 @@
       <a href="#"><span class="fa fa-sign-in"></span><strong>LOGIN</strong></a>
     </li>
     <form role="search" class="navbar-form navbar-right">
-      <div class="form-group">
+      <div class="input-group">
         <input type="text" placeholder ="Search" class="form-control search">
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-default">
+            <i class="fa fa-search"></i>
+          </button>
+        </span>
       </div>
     </form>
   </ul>
@@ -43,6 +48,7 @@
   <div class="row">
       <div class="col-xs-12 col-md-7">
       <!--Sign up form-->
+      <!--
       <form class="form-horizontal"> 
         <div class="form-group has-feedback">
           <label class="col-xs-3 control-label" for="username">Username</label>
@@ -99,11 +105,49 @@
           <label class="col-xs-3 control-label" for="confirmPassword">Confirm Password</label>
           <div class="col-xs-9">
             <span class="form-control-feedback fa fa-key"></span>
-            <input type="password" id="confirmPassword" class="form-control no-border" placeholder="confirmPassword"/>
+            <input type="password" id="confirmPassword" class="form-control no-border" placeholder="Confirm Password"/>
           </div>
         </div>
       </form>
+      -->
       <!--User sign up form ends-->
+      <!--User sign in form begin-->
+      
+      <form class="form-horizontal"> 
+        <div class="form-group has-feedback">
+          <label class="col-xs-3 control-label" for="username">Username</label>
+          <div class="col-xs-9">      
+            <span class="form-control-feedback fa fa-user"></span>
+            <input type="text" id="username" class="form-control no-border" placeholder="Username"/>
+          </div>
+        </div>
+        <div class="form-group has-feedback">
+          <label class="col-xs-3 control-label" for="password">Password</label>
+          <div class="col-xs-9">
+            <span class="form-control-feedback fa fa-key"></span>
+            <input type="password" id="password" class="form-control no-border" placeholder="Password"/>
+          </div>
+        </div>
+        <br>
+        <div class="form-group">
+          <div class="col-xs-offset-3 col-xs-9">
+            <input type="submit" class="btn btn-primary" value="Login">
+            <a><strong>Forget password?</strong></a>
+            <br>
+            <div class= "social-logins">
+              <i>Login with &raquo;</i>
+               <span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x" style="color:blue"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-square fa-stack-2x" style="color:red"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </form>
       <!--
         <div>
           <ul class="pagination">

@@ -2,7 +2,8 @@
 @import 'utils';
 @import 'global';
 @import 'layout';
-a:hover {
+a:hover,
+.fa {
   cursor: pointer;
   font-weight: bold;
 }
@@ -23,4 +24,8 @@ a:hover {
 .form-horizontal {
   background-color: rgba(29, 95, 218, 0.2);
   padding: 10px;
+}
+
+.social-logins {
+  margin-top: 20px
 }
