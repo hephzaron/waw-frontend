@@ -10,9 +10,12 @@
 }
 
 #dashboard {
+  &.container-fluid {
+    background-color: rgba(98, 128, 189, 0.479);
+  }
   & input.search {
     border: 0 !important;
-    border-bottom: 3px solid rgb(41, 67, 153) !important;
+    border-bottom: 3px solid rgb(16, 184, 52) !important;
     border-radius: 0px !important;
     box-shadow: 0px !important;
   }
@@ -39,13 +42,18 @@
     background-color: white;
     border-radius: 50%
   }
+  .col-md-5>#post {
+    background-color: white;
+  }
 }
 
 @media (min-width:992px) {
   #dashboard .nav-tabs {
+    .search {
+      min-width: 300px;
+    }
     li {
-      margin-left: 3em;
-      margin-right: 1.5em;
+      margin: 0em 1.5em;
     }
   }
 }
@@ -54,4 +62,113 @@ span>.badge {
   margin-bottom: 20px;
   margin-left: -12px;
   background-color: rgb(161, 31, 31)
+}
+
+.fa-ellipsis-v,
+.fa-ellipsis-h {
+  font-weight: bold;
+  color: rgb(22, 16, 100);
+  float: right;
+}
+
+.row.posts {
+  background-color: rgba(82, 80, 80, 0.3);
+  margin: 2px;
+  #post {
+    background-color: white;
+    hr {
+      margin: -30px 0 0 0;
+      border-bottom: 1px solid rgb(58, 57, 57);
+    }
+  }
+  .media {
+    padding: 7px 12px;
+  }
+  #reply {
+    padding: 0 !important;
+    h5 {
+      font-weight: bold;
+    }
+  }
+  #photo {
+    img {
+      max-height: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+#description {
+  width: 100%;
+  overflow-wrap: break-word;
+  margin-top: 5px;
+  padding: 0px 12px 7px 12px;
+  text-align: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#comments {
+  width: 100%;
+  overflow-wrap: break-word;
+  text-align: left;
+  margin-left: 45px
+}
+
+#reply-summary {
+  padding-left: 15px;
+  padding-top: 7px;
+  font-style: italic;
+}
+
+#response {
+  margin-left: 45px;
+  text-align: left;
+  margin-bottom: 5px;
+  a:not(:nth-child(4)) {
+    border-right: 2px solid grey;
+    padding-right: 4px
+  }
+}
+
+#post-reply {
+  margin-left: 45px
+}
+
+#more-reviews {
+  padding: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.media-body {
+  overflow-x: hidden;
+  h4 {
+    margin: 0 !important;
+  }
+  p {
+    margin: 0 !important;
+  }
+  .comment {
+    input.btn {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+  }
+}
+
+#post-options {
+  position: relative;
+  top: -50px;
+  color: white;
+  background-color: rgba(7, 7, 7, 0.589);
+  padding: 10px;
+  text-align: center;
+  height: 50px;
+  .fa {
+    font-size: 23px;
+    margin: 0 5px 0 10px;
+  }
 }

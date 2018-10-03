@@ -11,10 +11,6 @@
   }
 }
 
-.search {
-  min-width: 400px;
-}
-
 span {
   margin-right: 4px
 }
@@ -32,7 +28,7 @@ span {
   &-5 {
     overflow: hidden;
     padding: 20px;
-    border: 2px solid rgba(128, 128, 128, 0.493);
+    //border: 2px solid rgba(128, 128, 128, 0.493);
     &>h4 {
       text-align: center;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -67,9 +63,15 @@ body {
   width: 100%;
 }
 
-.box {
+.box#author-pix {
   width: 50px;
   height: 50px;
+  overflow: hidden;
+}
+
+.box#contributor-pix {
+  width: 35px;
+  height: 35px;
   overflow: hidden;
 }
 

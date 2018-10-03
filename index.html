@@ -18,10 +18,10 @@
 </head>
 
 <body>
-  <div class="container-fluid" id="dashboard">
+  <div id="dashboard">
     <div class="navbar-overlay">
       <ul class="nav nav-tabs">
-        <form role="search" class="navbar-form navbar-left">
+        <form role="search" class="navbar-form navbar-left search">
           <div class="input-group">
             <input type="text" placeholder ="Search" class="form-control search">
             <div class="input-group-addon btn-primary">
@@ -48,6 +48,111 @@
           <a href="#"><span class="fa fa-user fa-lg"></span><strong>Username</strong></a>
         </li>
       </ul>
+    </div>
+    <div class="row posts">
+      <div class="col-md-3 col-lg-3"></div>
+      <div class="col-md-5 col-lg-5">
+        <div id="post">
+         <div class="media">
+            <div class="media-left media-top">
+              <a href="#">
+              <div class="box" id="author-pix">
+                <img src="build/public/imgs/passport.jpg" class="media-object img-circle img-responsive" alt="Sample">
+              </div>
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Philip Newmann 
+                <i class="fa fa-ellipsis-v"></i>
+              </h4>
+              <p><i>American Salad</i></p>
+              <i class="fa fa-clock-o"> 2hrs ago</i>
+            </div>
+         </div>
+         <p id="description">
+         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1234657474848477747574844747575484737
+         </P>
+         <div id="photo">
+          <img src="build/public/imgs/passport.jpg" class="media-object center img-responsive" alt="Sample">
+         </div>
+         <div id="post-options">
+          <span><i class="fa fa-thumbs-o-up"></i>Like</span>
+          <span><i class="fa fa-comment-o"></i>Comment</span>
+          <span><i class="fa fa-gratipay"></i>Love</span>
+          <span><i class="fa fa-bookmark-o"></i>Save</span>
+          <span><i class="fa fa-trash-o"></i>Remove</span>
+          <span><i class="fa fa-pencil"></i>Edit</span>
+         </div>
+         <hr>
+         <p id="reply-summary">24 Likes, 4 Comments</p>
+         <div class="media">
+            <div class="media-left media-top">
+              <a href="#">
+              <div class="box" id="contributor-pix">
+                <img src="build/public/imgs/passport.jpg" class="media-object img-circle img-responsive" alt="Sample">
+              </div>
+              </a>
+            </div>
+            <div class="media-body">
+              <form id="add-review" class="comment">
+                <div class="input-group">
+                  <input type="text" placeholder ="Add a review..." class="form-control">
+                  <div class="input-group-addon">
+                    <i class="fa fa-camera fa-lg"></i>
+                  </div>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Post">
+              </form>
+            </div>
+            <div class="media" id="reply">
+              <div class="media-left media-top">
+                <a href="#">
+                  <div class="box" id="contributor-pix">
+                    <img src="build/public/imgs/passport.jpg" class="media-object img-circle img-responsive" alt="Sample">
+                  </div>
+                </a>
+              </div>
+              <div class="media-body">
+                <h5 class="media-heading">Philip Newmann 
+                  <i class="fa fa-ellipsis-h"></i>
+                </h5>
+                <i class="fa fa-clock-o"> 2hrs</i>
+              </div>
+              <p id="comments">hgygwewbebiuwiur983y98259832hu5ii2u589y98y235u2h598y289h8h8jhffhgfy76rfy6r67r67fhytr67r76fuyuy67</p>
+              <div id="response">
+                <a>Like</a>
+                <a>Reply</a>
+                <a>2 Likes</a>
+                <a>4 Replies</a>
+              </div>
+              <div id="post-reply">
+                <div class="media-left media-top">
+                  <a href="#">
+                    <div class="box" id="contributor-pix">
+                      <img src="build/public/imgs/passport.jpg" class="media-object img-circle img-responsive" alt="Sample">
+                    </div>
+                  </a>
+                </div>
+                <div class="media-body">
+                  <form id="add-reply" class="comment">
+                    <div class="input-group">
+                      <input type="text" placeholder ="Add a reply..." class="form-control">
+                      <div class="input-group-addon">
+                        <i class="fa fa-camera fa-lg"></i>
+                      </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Post">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p id="more-reviews">
+            Load more reviews
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4"></div>
     </div>
   </div>
   <script src="build/public/js/utils/jquery-3.2.1.min.js" type="text/javascript"></script>
